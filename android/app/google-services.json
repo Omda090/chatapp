@@ -1,0 +1,39 @@
+{
+  "project_info": {
+    "project_number": "253836062609",
+    "project_id": "messgaemeapp",
+    "storage_bucket": "messgaemeapp.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:253836062609:android:4c36e1ad969a88225a3430",
+        "android_client_info": {
+          "package_name": "at.Omda.chatapp"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "253836062609-otbp2ain8a93ke7u2aakji9ju0qfeg54.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyCqP-CnFADZDYMMGxbPuFv9H3cHqJsED34"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "253836062609-otbp2ain8a93ke7u2aakji9ju0qfeg54.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}
