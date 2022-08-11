@@ -1,8 +1,12 @@
+import 'package:chatapp/screens/registration_screen.dart';
+import 'package:chatapp/screens/signin_screen.dart';
 import 'package:flutter/material.dart';
 
 import '../widgets/my_button.dart';
 
 class WelcomeScreen extends StatefulWidget {
+  static const String screenRoute = 'welcome_screen';
+
   const WelcomeScreen({Key? key}) : super(key: key);
 
   @override
@@ -42,12 +46,16 @@ class _WelcomeScreenState extends State<WelcomeScreen> {
             MyButton(
               color: Colors.yellow[900]!,
               title: 'Sign in',
-              onPressed: () {},
+              onPressed: () {
+                Navigator.pushNamed(context, SignInScreen.screenRoute);
+              },
             ),
             MyButton(
               color: Colors.blue[800]!,
               title: 'register',
-              onPressed: () {},
+              onPressed: () {
+                Navigator.pushNamed(context, RegistrationScreen.screenRoute);
+              },
             )
           ],
         ),

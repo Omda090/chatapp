@@ -1,16 +1,17 @@
-import 'package:chatapp/widgets/my_button.dart';
 import 'package:flutter/material.dart';
 
-class RegistrationScreen extends StatefulWidget {
-  static const String screenRoute = 'registration_screen';
+import '../widgets/my_button.dart';
 
-  const RegistrationScreen({Key? key}) : super(key: key);
+class SignInScreen extends StatefulWidget {
+  static const String screenRoute = 'signin_screen';
+
+  const SignInScreen({Key? key}) : super(key: key);
 
   @override
-  State<RegistrationScreen> createState() => _RegistrationScreenState();
+  State<SignInScreen> createState() => _SignInScreenState();
 }
 
-class _RegistrationScreenState extends State<RegistrationScreen> {
+class _SignInScreenState extends State<SignInScreen> {
   @override
   Widget build(BuildContext context) {
     return Scaffold(
@@ -79,7 +80,7 @@ class _RegistrationScreenState extends State<RegistrationScreen> {
             ),
             SizedBox(height: 10),
             MyButton(
-                color: Colors.blue[800]!, title: 'register', onPressed: () {})
+                color: Colors.yellow[900]!, title: 'Sign In', onPressed: () {})
           ],
         ),
       ),
