@@ -28,6 +28,7 @@ class _SignInScreenState extends State<SignInScreen> {
             ),
             SizedBox(height: 50),
             TextField(
+              keyboardType: TextInputType.emailAddress,
               textAlign: TextAlign.center,
               onChanged: (value) {},
               decoration: InputDecoration(
@@ -54,6 +55,7 @@ class _SignInScreenState extends State<SignInScreen> {
             ),
             SizedBox(height: 8),
             TextField(
+              obscureText: true,
               textAlign: TextAlign.center,
               onChanged: (value) {},
               decoration: InputDecoration(

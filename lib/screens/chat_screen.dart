@@ -1,4 +1,7 @@
+import 'dart:developer';
+import 'package:chatapp/screens/chat_screen.dart';
 import 'package:flutter/material.dart';
+import 'package:firebase_auth/firebase_auth.dart';
 
 class ChatScreen extends StatefulWidget {
   static const String screenRoute = 'chat_screen';
@@ -7,9 +10,31 @@ class ChatScreen extends StatefulWidget {
 
   @override
   State<ChatScreen> createState() => _ChatScreenState();
+  // _ChatScreenState createState() => _ChatScreenState();
 }
 
 class _ChatScreenState extends State<ChatScreen> {
+  final _auth = FirebaseAuth.instance;
+  late User SignedInUser;
+
+  @override
+  void initState() {
+    super.initState();
+    GetCurrentUser();
+  }
+
+  void GetCurrentUser() {
+    try {
+      final user = _auth.currentUser;
+      if (user != null) {
+        SignedInUser = user;
+        print(SignedInUser.email);
+      }
+    } catch (e) {
+      print(e);
+    }
+  }
+
   @override
   Widget build(BuildContext context) {
     return Scaffold(
