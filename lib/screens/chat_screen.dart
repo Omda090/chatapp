@@ -22,7 +22,8 @@ class _ChatScreenState extends State<ChatScreen> {
     super.initState();
     GetCurrentUser();
   }
-/////////////omda
+
+/////////////omdaAbdo
   void GetCurrentUser() {
     try {
       final user = _auth.currentUser;
